@@ -1,0 +1,11 @@
+.cart-section__content {
+  @include mixins.flex(row, flex-start, flex-start, wrap);
+  column-gap: 15px;
+  row-gap: 15px;
+  margin-top: 20px;
+}
+
+.cart-section__total {
+  @include mixins.textStyle(30px, 24px, 400, #1b1b1b);
+  margin-top: 35px;
+}

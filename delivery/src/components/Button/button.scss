@@ -1,0 +1,11 @@
+.btn {
+  background-color: rgb(38, 96, 36);
+  padding: 10px 30px;
+  border-radius: 10px;
+  @include mixins.textStyle(20px, 24px, 500, #ffffff);
+  font-family: Arial, Helvetica, sans-serif;
+  transition-duration: 1s;
+  &:hover {
+    background-color: rgb(69, 100, 67);
+  }
+}

@@ -1,0 +1,14 @@
+.container {
+  @include mixins.marginCenter;
+  max-width: 1200px;
+}
+
+.section-title {
+  @include mixins.textStyle(55px, 60px, 500, #101010);
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+}
+
+html{
+  font-family: Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,15 @@
+.delivery-item {
+  box-shadow: 1px 1px 12px 0px rgb(136, 136, 136);
+  border-radius: 9px;
+  padding: 15px;
+  &__name {
+    @include mixins.textStyle(25px, 30px, 500, #1d1d1d);
+  }
+  &__price {
+    @include mixins.textStyle(20px, 24px, 500, #1d1d1d);
+  }
+  &__weight {
+    @include mixins.textStyle(20px, 24px, 500, #1d1d1d);
+    margin-bottom: 15px;
+  }
+}

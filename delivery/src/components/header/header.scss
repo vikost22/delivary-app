@@ -1,0 +1,32 @@
+.main-header {
+  background-color: rgb(38, 96, 36);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  &__container {
+    @include mixins.flex(row, space-between, center, wrap);
+  }
+  &__logo {
+    @include mixins.textStyle(20px, 24px, 500, #ffffff);
+  }
+}
+
+.selected-counter{
+  color: black;
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -10px;
+  left: 23px;
+  border-radius: 50%;
+}
+
+.d-none{
+  display: none;
+}
+.cart{
+  position: relative;
+}
