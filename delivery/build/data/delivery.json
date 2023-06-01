@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Pizza",
+    "image": "./images/pizza-title.jpg",
+    "products": [
+      {
+        "name": "Neapolitan Pizza",
+        "price": 20,
+        "weight": 200,
+        "productId": 1
+      },
+      {
+        "name": "Chicago Pizza",
+        "price": 20,
+        "weight": 200,
+        "productId": 2
+      },
+      {
+        "name": "California Pizza",
+        "price": 20,
+        "weight": 200,
+        "productId": 3
+      }
+    ]
+  },
+  {
+    "name": "Unagi-ya",
+    "image": "./images/sushi-title.jpg",
+    "products": [
+      {
+        "name": "Maki Salmon",
+        "price": 6,
+        "weight": 100,
+        "productId": 4
+      },
+      {
+        "name": "Nigiri Mix",
+        "price": 10,
+        "weight": 180,
+        "productId": 5
+      },
+      {
+        "name": "Maki Salmon Avocado",
+        "price": 5,
+        "weight": 120,
+        "productId": 6
+      }
+    ]
+  },
+  {
+    "name": "NICEBURGER",
+    "image": "./images/burger-title.jpg",
+    "products": [
+      {
+        "name": "Classic Burger",
+        "price": 4,
+        "weight": 90,
+        "productId": 7
+      },
+      {
+        "name": "DablCheese",
+        "price": 6,
+        "weight": 110,
+        "productId": 8
+      },
+      {
+        "name": "Fri",
+        "price": 3,
+        "weight": 100,
+        "productId": 9
+      }
+    ]
+  },
+  {
+    "name": "Upper Grill",
+    "image": "./images/reber-title.jpg",
+    "products": [
+      {
+        "name": "Cobb Salad",
+        "price": 7,
+        "weight": 100,
+        "productId": 10
+      },
+      {
+        "name": "Chicken Quesadilla",
+        "price": 10,
+        "weight": 200,
+        "productId": 11
+      },
+      {
+        "name": "Meat for Beer",
+        "price": 9,
+        "weight": 100,
+        "productId": 12
+      }
+    ]
+  }
+]
