@@ -2,10 +2,10 @@
   @include mixins.flex(column, flex-start, flex-start, nowrap);
   column-gap: 15px;
   row-gap: 15px;
+  padding: 10px;
   margin-top: 20px;
   max-height: 450px;
   overflow-y: scroll;
-  padding: 10px;
 }
 
 .cart-section__total {
