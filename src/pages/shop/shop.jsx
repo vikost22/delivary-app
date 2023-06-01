@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import DeliverItem from "../../components/DeliveryItem";
+import DeliveryItem from "../../components/DeliveryItem";
 
 export default function Shop() {
   const shop = useSelector((state) => state.delivery.selectedShop);
@@ -11,7 +11,7 @@ export default function Shop() {
           {!shop ? (
             <p className="loading">Loading...</p>
           ) : (
-            shop.products.map((item) => <DeliverItem {...item} />)
+            shop.products.map((item) => <DeliveryItem {...item} />)
           )}
         </div>
       </div>

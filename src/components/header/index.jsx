@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
   const addedCount = useSelector(state=>state.delivery.cartItems.length);
-  console.log(addedCount);
   return (
     <header className="main-header">
       <div className="container main-header__container">

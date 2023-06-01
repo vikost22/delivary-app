@@ -1,9 +1,12 @@
 import { useSelector } from "react-redux";
-import DeliverItem from "../../components/DeliveryItem";
+import CartItem from "../../components/CartItem";
 
 export default function Cart() {
   const addedItems = useSelector((state) => state.delivery.cartItems);
-  const total = addedItems.reduce((sum, item)=>sum+item.price, 0);
+  const total = addedItems.reduce(
+    (sum, item) => sum + item.price * item.count,
+    0
+  );
   return (
     <section className="cart-secton">
       <div className="container cart-section__container">
@@ -12,7 +15,7 @@ export default function Cart() {
           {!addedItems ? (
             <p className="loading">Loading</p>
           ) : (
-            addedItems.map((item) => <DeliverItem {...item} />)
+            addedItems.map((item) => <CartItem {...item} />)
           )}
         </div>
         <p className="cart-section__total">Total: {total}$</p>

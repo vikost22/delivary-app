@@ -14,7 +14,7 @@ export default function ShopItem(props) {
       <div className="shop-item__info">
         <p className="shop-item__name">{name}</p>
         <Link to={'/shop'} className="shop-item__more" onClick={selectNewShop}>
-          Show more...
+          Show menu
         </Link>
       </div>
     </li>
