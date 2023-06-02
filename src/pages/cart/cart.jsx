@@ -31,8 +31,10 @@ export default function Cart() {
             addedItems.map((item) => <CartItem {...item} />)
           )}
         </div>
-        <p className="cart-section__total">Total: {total}$</p>
-        <Button text={"Buy"} onButtonClick={order} />
+        <div className="order">
+          <p className="cart-section__total">Total: {total}$</p>
+          <Button text={"Buy"} onButtonClick={order} />
+        </div>
       </div>
     </section>
   );
