@@ -2,14 +2,16 @@ import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 export default function Header() {
-  const addedCount = useSelector(state=>state.delivery.cartItems.length);
+  const addedCount = useSelector((state) => state.delivery.cartItems.length);
+
   return (
     <header className="main-header">
       <div className="container main-header__container">
-        <Link to={'/'}>
+        <Link to={"/"}>
           <p className="main-header__logo">Delivery App</p>
         </Link>
-        <Link to={'/cart'}>
+
+        <Link to={"/cart"}>
           <div className="cart">
             <img
               src="/images/icons/cart.png"
@@ -18,8 +20,8 @@ export default function Header() {
               height={"30"}
             />
             <span className={addedCount ? "selected-counter" : "d-none"}>
-            {addedCount}
-          </span>
+              {addedCount}
+            </span>
           </div>
         </Link>
       </div>

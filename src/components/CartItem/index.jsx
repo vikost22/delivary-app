@@ -1,7 +1,5 @@
 import { useDispatch } from "react-redux";
 import Button from "../Button";
-import { setModalContent, toggleState } from "../../redux/features/modalSlice";
-import { useLocation } from "react-router-dom";
 import {
   removeItemsFromCart,
   addItemToCart,
@@ -10,7 +8,8 @@ import {
 
 export default function CartItem(props) {
   const dispatch = useDispatch();
-  const { name, price, weight, productId, count } = props;
+  const { name, price, productId, count } = props;
+  
   return (
     <li className="cart-item">
       <div className="cart-item__info">

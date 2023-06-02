@@ -3,6 +3,7 @@ import DeliveryItem from "../../components/DeliveryItem";
 
 export default function Shop() {
   const shop = useSelector((state) => state.delivery.selectedShop);
+
   return (
     <section className="shop-secton">
       <div className="container shop-section__container">

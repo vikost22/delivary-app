@@ -13,6 +13,7 @@ export const deliverySlice = createSlice({
       state.selectedShop = action.payload;
       localStorage.setItem("selectedShop", JSON.stringify(action.payload));
     },
+
     addItemToCart: (state, { payload }) => {
       const itemInd = state.cartItems.findIndex(
         (item) => item.productId === payload.productId
@@ -31,12 +32,14 @@ export const deliverySlice = createSlice({
       }
       localStorage.setItem("cartItems", JSON.stringify(state.cartItems));
     },
+
     removeItemsFromCart: (state, action) => {
       state.cartItems = [...state.cartItems].filter(
         (item) => item.productId !== action.payload
       );
       localStorage.setItem("cartItems", JSON.stringify(state.cartItems));
     },
+
     removeItemFromCart: (state, { payload }) => {
       const itemInd = state.cartItems.findIndex(
         (item) => item.productId === payload.productId

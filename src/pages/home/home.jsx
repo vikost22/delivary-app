@@ -3,6 +3,7 @@ import ShopItem from "../../components/ShopItem";
 
 export default function Home() {
   const { data } = useGetAllShopsQuery("");
+
   return (
     <section className="home-section">
       <div className="container home-section__container">

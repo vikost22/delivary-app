@@ -9,6 +9,6 @@
 }
 
 .cart-section__total {
-  @include mixins.textStyle(30px, 24px, 400, #1b1b1b);
+  @include mixins.textStyle(30px, 24px, 400,  rgb(38, 96, 36));
   margin-top: 35px;
 }

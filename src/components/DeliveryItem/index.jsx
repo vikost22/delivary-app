@@ -1,9 +1,11 @@
 import { useDispatch } from "react-redux";
 import Button from "../Button";
 import { setModalContent, toggleState } from "../../redux/features/modalSlice";
+
 export default function DeliveryItem(props) {
   const dispatch = useDispatch();
-  const { name, price, weight, productId } = props;
+  const { name, price, weight } = props;
+
   return (
     <li className="delivery-item">
       <p className="delivery-item__name">{name}</p>

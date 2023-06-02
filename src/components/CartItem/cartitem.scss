@@ -6,6 +6,7 @@
   padding: 15px;
   &__info {
     @include mixins.textStyle(25px, 30px, 500, #1d1d1d);
+    width: 250px;
   }
   &__counter {
     @include mixins.flex(row, space-between, center, wrap);
