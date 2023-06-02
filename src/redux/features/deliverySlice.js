@@ -55,6 +55,11 @@ export const deliverySlice = createSlice({
       state.cartItems = updatedItems;
       localStorage.setItem("cartItems", JSON.stringify(state.cartItems));
     },
+
+    resetCartItems: (state) => {
+      state.cartItems = [];
+      localStorage.setItem("cartItems", JSON.stringify(state.cartItems));
+    },
   },
 });
 
@@ -63,6 +68,7 @@ export const {
   addItemToCart,
   removeItemsFromCart,
   removeItemFromCart,
+  resetCartItems,
 } = deliverySlice.actions;
 
 export default deliverySlice.reducer;

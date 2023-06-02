@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import CartItem from "../../components/CartItem";
 import Button from "../../components/Button";
-import { removeItemsFromCart } from "../../redux/features/deliverySlice";
+import { resetCartItems } from "../../redux/features/deliverySlice";
 import { useNavigate } from "react-router-dom";
 
 export default function Cart() {
@@ -15,9 +15,7 @@ export default function Cart() {
 
   function order() {
     console.table(addedItems);
-    addedItems.forEach((item) => {
-      dispatch(removeItemsFromCart(item.productId));
-    });
+    dispatch(resetCartItems());
     navigate("/");
   }
   return (
