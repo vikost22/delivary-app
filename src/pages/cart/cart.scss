@@ -1,3 +1,6 @@
+.cart-secton{
+  padding-bottom: 40px;
+}
 .cart-section__content {
   @include mixins.flex(column, flex-start, flex-start, nowrap);
   column-gap: 15px;
