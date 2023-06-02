@@ -1,6 +1,8 @@
 .container {
   @include mixins.marginCenter;
   max-width: 1200px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .section-title {
@@ -9,6 +11,6 @@
   margin-top: 20px;
 }
 
-html{
+html {
   font-family: Arial, Helvetica, sans-serif;
 }

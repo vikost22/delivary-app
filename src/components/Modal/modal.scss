@@ -16,6 +16,8 @@
   z-index: -9;
   opacity: 0;
   overflow-y: auto;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .modal-wrap--active {
@@ -58,15 +60,15 @@
   padding: 20px;
   border-radius: 12px;
   position: relative;
-  &__header{
+  &__header {
     @include mixins.textStyle(20px, 24px, 500, #171717);
     margin-top: 0;
   }
-  &__text{
+  &__text {
     @include mixins.textStyle(15px, 24px, 400, #171717);
     margin-bottom: 30px;
   }
-  &__actions{
+  &__actions {
     @include mixins.flex(row, center, center, wrap);
   }
 }
